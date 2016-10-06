@@ -9,7 +9,11 @@ $tab  = json_decode($response, true);
 
 echo ($tab['weather'][0]['main']);
 
+$temps= $tab['weather'][0]['main'];
+$deezer= file_get_contents("https://api.deezer.com/search?q=".$temps);
+$vard = json_decode($deezer,true);
+
+echo "<iframe src='" . $vard['data'][0]['preview'] . "'></iframe>";
+
 
 ?>
-
-
