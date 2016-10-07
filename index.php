@@ -140,7 +140,7 @@
         </div>
     </section>
 
-    <!-- Map Section -->
+<!-- Map Section -->
     <div class="map-responsive">
     <iframe width="2080" height="400" frameborder="0" scrolling="no" marginheight="50" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=1.8859255313873293%2C47.89138454986686%2C1.8972015380859377%2C47.895585730463566&amp;layer=mapnik&amp;marker=47.89348518277107%2C1.8915635347366333" style="border: 1px solid black"></iframe>
     </div>
