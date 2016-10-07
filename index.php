@@ -87,11 +87,36 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>How do you feel today?</h1>
-                        <form action="result.php" method="post">
+                        <form action="#about" method="post">
                             <label for="ville">Ville</label>
                             <input type="text" name="ville" id="ville"/>
                             <input type="submit" value="Rechercher" />
-                        </form>
+                        </form> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about2" class="about2-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="container">                           
+                        <?php
+                        $ville = $_POST['ville'];
+                        $request = 'http://api.openweathermap.org/data/2.5/weather?q='.$ville.'&APPID=2093ff5449c0cd4294aadbf8c0355fdd';
+                        $response  = file_get_contents($request);
+                        $tab  = json_decode($response, true);
+
+                        echo ($tab['weather'][0]['main']);
+
+                        $temps= $tab['weather'][0]['main'];
+                        $deezer= file_get_contents("https://api.deezer.com/search?q=".$temps);
+                        $vard = json_decode($deezer,true);
+
+                        echo "<iframe src='" . $vard['data'][0]['preview'] . "'></iframe>";
+                        ?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,6 +157,3 @@
 </body>
 
 </html>
-
-
-
