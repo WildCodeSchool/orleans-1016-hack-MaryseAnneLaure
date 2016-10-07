@@ -47,6 +47,10 @@ html {
     }
 }
 
+.navbar-brand{
+    font-size: 25px;
+}
+
 .about-section {
     background-image:url('../img/bwcloud2.jpg');
     background-size: cover;

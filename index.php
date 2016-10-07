@@ -45,20 +45,20 @@
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><p class="text-danger">Weather Moon</p></a>
-            </div>
 
+            <div class="container" >
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                <a class="navbar-brand page-scroll" href="#page-top"><p class="text-danger">Weather Mood</p></a>
+            </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse ">
                 <ul class="nav navbar-nav">
@@ -71,6 +71,7 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#footer"><p class="text-primary" >Contact</p></a>
+                        <a class="page-scroll" href="#contact"><p class="text-primary" >Contact</p></a>
                     </li>
                 </ul>
             </div>
@@ -78,24 +79,18 @@
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Section -->
     <section id="intro" class="intro-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                    <div class="row text">
-                        <div class="col-lg-offset-5 col-md-offset-4">
-                            <h1>Mood Effect</h1>
-                            <p>Elebritati diebus invadere parans dux ante, and edictus per solitudines Aboraeque amnis herbidas ripas. <br />To make a link smooth scroll to another section on the page, uorum indicio proditus, <br />qui admissi flagitii metu exagitati ad praesidia descivere Romana. <br />Absque ullo egressus effectu deinde tabescebat immobilis..</p>
-                            <a class="page-scroll" href="#about"><i class="fa fa-angle-double-down" style="font-size:48px;color:yellow"></i></a>
-                        </div>
-                     </div>
-                 </div>
-            </div>
-        </div>
+                <div class="col-lg-offset-6 col-md-offset-6 col-sm-offset-6 vcenter">
+                    <div class="text">
+                        <h1 class="text-center">Season Effect</h1>
+                        <p class="text-center">Elebritati diebus invadere parans dux ante, and edictus per solitudines Aboraeque amnis herbidas ripas. <br />To make a link smooth scroll to another section on the page, uorum indicio proditus, <br />qui admissi flagitii metu exagitati ad praesidia descivere Romana. <br />Absque ullo egressus effectu deinde tabescebat immobilis..</p>
+                        <a class="page-scroll" href="#about"><i class="fa fa-angle-double-down" style="font-size:48px;color:yellow"></i></a>
+                    </div>
                 </div>
-        </div>
-            </div>
+             </div>
         </div>
     </section>
 
@@ -103,13 +98,14 @@
     <section id="about" class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>How do you feel today ?</h1>
-                        <form action="#about" method="post">
-                            <label for="ville">Try a city</label>
+                <div class="col-lg-12 ">
+                    <h2>How do you feel today ?<br />&emsp;&emsp;Type a city</h2>
+                    <form class="title" action="#about" method="post">
+                        <label for="ville">
                             <input type="text" name="ville" id="ville"/>
-                            <input type="submit" value="Cloud it" />
-                        </form> 
+                            <input type="submit" value="Cloud it"/>
+                        </label>
+                    </form>
                 </div>
             </div>
         </div>
@@ -119,7 +115,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="container">                           
                         <?php
                         $ville = $_POST['ville'];
                         $request = 'http://api.openweathermap.org/data/2.5/weather?q='.$ville.'&APPID=2093ff5449c0cd4294aadbf8c0355fdd';
@@ -134,7 +129,6 @@
 
                         echo "<iframe src='" . $vard['data'][0]['preview'] . "'></iframe>";
                         ?>
-                    </div>
                 </div>
             </div>
         </div>
@@ -156,6 +150,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/grayscale.min.js"></script>
+
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
