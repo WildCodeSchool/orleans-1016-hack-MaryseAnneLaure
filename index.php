@@ -18,10 +18,19 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
     <!--Fonts link-->
     <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet"> 
-     <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet"> 
+
+        <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!--Map-->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -61,10 +70,7 @@
                         <a class="page-scroll" href="#about"><p class="text-success">About</p></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services"><p class="text-warning">Services</p></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact"><p class="text-primary" >Contact</p></a>
+                        <a class="page-scroll" href="#footer"><p class="text-primary" >Contact</p></a>
                     </li>
                 </ul>
             </div>
@@ -134,10 +140,26 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Map Section -->
+    <div class="map-responsive">
+    <iframe width="2080" height="400" frameborder="0" scrolling="no" marginheight="50" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=1.8859255313873293%2C47.89138454986686%2C1.8972015380859377%2C47.895585730463566&amp;layer=mapnik&amp;marker=47.89348518277107%2C1.8915635347366333" style="border: 1px solid black"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+
+            <h2>Made by <a href="https://github.com/messant/" target="_blank">Ezrea&<a href="https://github.com/annelf/" target="_blank">Nono</h2>
+            <p>Copyright &copy; Your Website 2016</p>
+        </div>
+    </footer>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -145,6 +167,13 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!--Map-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="exemple.js"></script>
 
 </body>
 

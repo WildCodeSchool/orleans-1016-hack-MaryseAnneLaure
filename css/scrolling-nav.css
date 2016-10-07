@@ -70,6 +70,26 @@ html {
     text-align: center;
 }
 
-h1 {
+h1 { 
     font-family: 'Kranky', cursive;
+}
+
+#footer {
+    margin-top: 220px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+h2 {
+    font-family: 'Kranky', cursive;
+    text-align: center;
+    color: yellow;
+}
+
+a {
+    color:inherit;
+}
+
+iframe {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
