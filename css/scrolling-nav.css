@@ -39,33 +39,25 @@ of those sections to manage the look and feel of the site. */
 }
 
 .about-section {
-    margin-bottom: -220px;
-    height: 100%;
+    background:url('../img/bwcloud2.jpg');
+    background-position: center;
+    margin: -220px;
+    height: 75%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
 }
 
 .about2-section {
+    background:url('../img/bwcloud2.jpg');
+    background-position: center;
     display: none;
     margin-top: -400px;
     margin-left: -60px;
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
 }
 
-.services-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #fff;
-}
-
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+h1 {
+    font-family: 'Kranky', cursive;
 }

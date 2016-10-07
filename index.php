@@ -18,6 +18,10 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
+    <!--Fonts link-->
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One" rel="stylesheet"> 
+     <link href="https://fonts.googleapis.com/css?family=Kranky" rel="stylesheet"> 
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,11 +90,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1>How do you feel today?</h1>
+                    <h1>How do you feel today ?</h1>
                         <form action="#about" method="post">
-                            <label for="ville">Ville</label>
+                            <label for="ville">Try a city</label>
                             <input type="text" name="ville" id="ville"/>
-                            <input type="submit" value="Rechercher" />
+                            <input type="submit" value="Cloud it" />
                         </form> 
                 </div>
             </div>
@@ -122,27 +126,7 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Services Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Section</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
