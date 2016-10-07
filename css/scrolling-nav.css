@@ -17,13 +17,15 @@ html {
         font-size: 20px;
     }
 
-    .navbar-brand{
-
-    }
-
     .top-nav-collapse {
         padding: 0;
+
     }
+}
+.navbar-default {
+    background-color: transparent;
+    background:rgba(255,255,255,0.9);
+    border-color: transparent;
 }
 
 .intro-section {
@@ -32,25 +34,11 @@ html {
     background-image: url("../img/music.jpg");
     background-size: cover;
     background-position: 20% 80%;
+    background-attachment:fixed;
 }
 
-.about-section {
-    background:url('../img/bwcloud2.jpg');
-    background-position: center;
-    margin: -220px;
-    height: 75%;
-    padding-top: 150px;
-}
-
-.img-responsive{
-    display: block;
-    height: 100%;
-}
-
-.text{
-    position: absolute;
-    top: 25%;
-    padding-top: 100px;
+.vcenter {
+    padding-top: 350px;
 }
 
 @media (min-width: 780px) {
@@ -59,17 +47,33 @@ html {
     }
 }
 
-.about2-section {
-    background:url('../img/bwcloud2.jpg');
-    background-position: center;
-    display: none;
-    margin-top: -400px;
-    margin-left: -60px;
+.about-section {
+    background-image:url('../img/bwcloud2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
     padding-top: 150px;
-    text-align: center;
+    background-attachment:fixed;
 }
 
-h1 {
+.about2-section {
+    display: none;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.col-lg-12{
     font-family: 'Kranky', cursive;
+    position: absolute;
+    top: 120%;
+
+}
+
+h2{
+    color: white;
+}
+
+.form{
+    color: grey;
 }
