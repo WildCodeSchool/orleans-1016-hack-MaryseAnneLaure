@@ -17,6 +17,7 @@
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -42,24 +43,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Weather Moon</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><p class="text-danger">Weather Moon</p></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <div class="collapse navbar-collapse navbar-ex1-collapse ">
                 <ul class="nav navbar-nav">
                     <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                     <li class="hidden">
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about"><p class="text-success">About</p></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services"><p class="text-warning">Services</p></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact"><p class="text-primary" >Contact</p></a>
                     </li>
                 </ul>
             </div>
@@ -72,11 +73,18 @@
     <section id="intro" class="intro-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>Scrolling Nav</h1>
-                    <p><strong>Usage Instructions:</strong> Make sure to include the <code>scrolling-nav.js</code>, <code>jquery.easing.min.js</code>, and <code>scrolling-nav.css</code> files. To make a link smooth scroll to another section on the page, give the link the <code>.page-scroll</code> class and set the link target to a corresponding ID on the page.</p>
-                    <a class="btn btn-default page-scroll" href="#about">Click Me to Scroll Down!</a>
+                    <div class="row text">
+                        <div class="col-lg-offset-5 col-md-offset-4">
+                            <h1>Mood Effect</h1>
+                            <p>Elebritati diebus invadere parans dux ante, and edictus per solitudines Aboraeque amnis herbidas ripas. <br />To make a link smooth scroll to another section on the page, uorum indicio proditus, <br />qui admissi flagitii metu exagitati ad praesidia descivere Romana. <br />Absque ullo egressus effectu deinde tabescebat immobilis..</p>
+                            <a class="page-scroll" href="#about"><i class="fa fa-angle-double-down" style="font-size:48px;color:yellow"></i></a>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
                 </div>
+        </div>
             </div>
         </div>
     </section>
